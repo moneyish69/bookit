@@ -50,6 +50,8 @@ const Booking = mongoose.model('Booking', bookingSchema);
 
 // Seed data
 const seedData = async () => {
+  // Clear existing data and reseed
+  await Experience.deleteMany({});
   const count = await Experience.countDocuments();
   if (count === 0) {
     const experiences = [
