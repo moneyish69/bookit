@@ -114,6 +114,43 @@ const seedData = async () => {
           { time: "10:00 am", available: 4, soldOut: false },
           { time: "12:00 pm", available: 2, soldOut: false }
         ]
+      },
+      {
+        name: "Desert Safari",
+        location: "Rajasthan",
+        description: "Curated small-group experience. Certified guide. Safety first with gear included.",
+        price: 1599,
+        image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=400",
+        availableDates: ["Oct 22", "Oct 23", "Oct 24", "Oct 25", "Oct 26"],
+        timeSlots: [
+          { time: "04:00 pm", available: 12, soldOut: false },
+          { time: "06:00 pm", available: 8, soldOut: false }
+        ]
+      },
+      {
+        name: "Scuba Diving",
+        location: "Goa",
+        description: "Curated small-group experience. Certified guide. Safety first with gear included.",
+        price: 2499,
+        image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+        availableDates: ["Oct 22", "Oct 23", "Oct 24", "Oct 25", "Oct 26"],
+        timeSlots: [
+          { time: "09:00 am", available: 6, soldOut: false },
+          { time: "11:00 am", available: 4, soldOut: false },
+          { time: "02:00 pm", available: 5, soldOut: false }
+        ]
+      },
+      {
+        name: "Mountain Trekking",
+        location: "Himachal",
+        description: "Curated small-group experience. Certified guide. Safety first with gear included.",
+        price: 1899,
+        image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400",
+        availableDates: ["Oct 22", "Oct 23", "Oct 24", "Oct 25", "Oct 26"],
+        timeSlots: [
+          { time: "06:00 am", available: 8, soldOut: false },
+          { time: "08:00 am", available: 6, soldOut: false }
+        ]
       }
     ];
     await Experience.insertMany(experiences);
