@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/highway-delite-logo.svg';
 
 interface HeaderProps {
   onSearch?: (query: string) => void;
@@ -28,10 +29,7 @@ export default function Header({ onSearch, showSearch = true }: HeaderProps) {
             className="flex items-center cursor-pointer" 
             onClick={handleLogoClick}
           >
-            <div className="bg-black text-white px-2 py-1 rounded-full text-sm font-bold mr-2">
-              Hd
-            </div>
-            <span className="text-lg font-semibold">highway delite</span>
+            <img src={logo} alt="Highway Delite" className="h-12" />
           </div>
           
           {showSearch && (
